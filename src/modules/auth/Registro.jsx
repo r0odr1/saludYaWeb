@@ -24,15 +24,11 @@ const Registro = ({ navigate }) => {
     >
       <div className="auth-form fade-in" style={{ maxWidth: 460 }}>
         <h1 className="auth-form__title">Crear cuenta</h1>
-        <p className="auth-form__subtitle">Regístrate como paciente — gratis</p>
+        <p className="auth-form__subtitle">Completa tus datos para registrarte</p>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
-          <Input label="Nombre completo *" placeholder="Juan Pérez" />
-          <Input label="Teléfono *" placeholder="300 123 4567" />
-        </div>
-
-        <Input label="Documento de identidad *" placeholder="CC 1234567890" />
+        <Input label="Nombre completo *" placeholder="Juan Pérez" />
         <Input label="Correo electrónico *" type="email" placeholder="tu@correo.com" />
+        <Input label="Teléfono *" placeholder="300 123 4567" />
 
         {/* Contrasena con indicador */}
         <div className="form-group">
