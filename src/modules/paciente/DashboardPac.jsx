@@ -1,4 +1,3 @@
-import KpiCard from '../../components/ui/KpiCard';
 import CitaCard from '../../components/ui/CitaCard';
 import { colors, specColors } from '../../tokens/tokens';
 
@@ -14,12 +13,6 @@ const QUICK_ACTIONS = [
     title: 'Mis citas',
     desc: 'Gestiona tus citas activas',
     target: 'mis-citas'
-  },
-  {
-    icon: '👤',
-    title: 'Mi perfil',
-    desc: 'Actualiza tu información personal',
-    target: 'perfil'
   },
 ];
 
@@ -46,13 +39,6 @@ const DashboardPac = ({ navigate }) => (
           <p className="quick-action-card__desc">{desc}</p>
         </div>
       ))}
-    </div>
-
-    {/* KPIs */}
-    <div className="kpi-grid" style={{ gridTemplateColumns: 'repeat(3,1fr)' }}>
-      <KpiCard number="3" label="Próximas citas"    color={colors.g600} icon="📅" />
-      <KpiCard number="8" label="Citas completadas" color={colors.info}  icon="✅" />
-      <KpiCard number="1" label="Recordatorio hoy"  color={colors.a600} icon="🔔" />
     </div>
 
     {/* Upcoming appointments */}
