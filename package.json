@@ -16,6 +16,12 @@
     "test:coverage": "react-scripts test --watchAll=false --coverage",
     "eject": "react-scripts eject"
   },
+  "jest": {
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "src/index.js"
+    ]
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
