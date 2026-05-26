@@ -148,7 +148,7 @@ describe('<App /> — Routing', () => {
 
     fireEvent.click(
       screen.getByRole('button', {
-        name: /enviar enlace/i
+        name: /enviar codigo/i
       })
     );
 
