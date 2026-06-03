@@ -507,7 +507,8 @@ img {
   border-radius: var(--radius-md);
   font-size: 13px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
   margin-bottom: 16px;
   line-height: 1.5;
