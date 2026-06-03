@@ -68,8 +68,15 @@ export const Exito = ({ navigate }) => (
       </Card>
 
       <Alert type="success">
-        Confirmación enviada a <strong>juan@correo.com</strong> · Código:{' '}
-        <strong>#SAY-20260416-001</strong>
+        <div>
+          <div>
+            Confirmación enviada a <strong>juan@correo.com</strong>
+          </div>
+
+          <div style={{ marginTop: 6, fontWeight: 700 }}>
+            Código de cita: #SAY-20260416-001
+          </div>
+        </div>
       </Alert>
 
       <div className="flex gap-3 justify-center">
